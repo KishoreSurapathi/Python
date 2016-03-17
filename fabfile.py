@@ -1,4 +1,8 @@
-from fabric.api import run
+from fabric.api import *
+
+env.user = 'ec2-user'
+env.key_filename = '~/Downloads/awscert.pem'
+env.password = 'abcd1234'
 
 def host_type():
     run('uname -s')
