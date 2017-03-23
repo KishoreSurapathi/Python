@@ -6,3 +6,6 @@ env.password = 'abcd1234'
 
 def host_type():
     run('uname -s')
+
+def host_load():
+    run('uptime')
